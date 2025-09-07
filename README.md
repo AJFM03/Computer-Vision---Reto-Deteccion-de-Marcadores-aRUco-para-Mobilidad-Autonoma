@@ -1,5 +1,5 @@
-🤖 Detección de Marcadores ArUco para Navegación Autónoma
-📌 Contexto
+🤖 **Detección de Marcadores ArUco para Navegación Autónoma**
+
 
 En el University Rover Challenge (URC) existe una misión llamada Navegación Autónoma, donde el rover debe detectar un marcador ArUco en el entorno y desplazarse hacia él de manera inteligente.
 
@@ -19,19 +19,24 @@ Avanzar si el marcador está centrado.
 
 De esta forma, se sientan las bases para integrar un sistema de visión en el control autónomo del rover.
 
-🛠️ Requisitos
+
+🛠️ **Requisitos**
 
 Antes de ejecutar el programa, instala las siguientes librerías en Python:
 
 pip install opencv-python opencv-contrib-python numpy
 
-📂 Archivos del proyecto
+
+
+📂 **Archivos del proyecto**
 
 generate_marker.py → Genera un marcador ArUco en formato PNG para imprimir y usar en las pruebas.
 
 detectar_aruco.py → Código principal que captura video en tiempo real, detecta marcadores e imprime la dirección de movimiento.
 
-▶️ Ejecución
+
+
+▶️ **Ejecución**
 
 Genera un marcador con el script:
 
@@ -46,8 +51,10 @@ Corre el programa de detección:
 
 python detectar_aruco.py
 
-📷 Funcionamiento
 
+
+📷 **Funcionamiento
+**
 La cámara abre un video en tiempo real.
 
 Si se detecta un marcador ArUco:
@@ -68,7 +75,9 @@ Ejemplo en consola:
 
 ID: 50 | Centro: (312, 240) | Mover a la IZQUIERDA
 
-🎯 Extensiones futuras
+
+
+🎯 **Extensiones futuras**
 
 Detección de múltiples marcadores al mismo tiempo.
 
@@ -78,6 +87,8 @@ Integración con el sistema de control del rover para movimiento real.
 
 Pruebas en condiciones de iluminación y terrenos variables (simulando el URC).
 
-🚀 Conclusión
+
+
+🚀 **Conclusión**
 
 Este proyecto demuestra cómo la visión por computadora con OpenCV puede aplicarse en la misión de Navegación Autónoma del URC, detectando marcadores ArUco y generando instrucciones simples de movimiento que luego pueden ser enviadas al rover para su desplazamiento automático.
